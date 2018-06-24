@@ -1,0 +1,39 @@
+
+  <div class="container">     
+        <div class="row">
+        
+        <div class="card position1 ml-auto" style="width: 18rem;" *ngIf="dish">
+            <div class="card-header">
+                <h5 class="card-title">Comments</h5>
+                <div class="comment-body">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">{{dish.comments[0].rating}}</li>
+                    <li class="list-group-item">{{dish.comments[0].comment}}</li>
+                    <li class="list-group-item">{{dish.comments[0].author}}</li>
+                    <div class="card-footer">
+                        <small class="text-muted"><li class="list-group-item">{{dish.comments[0].date | date: 'MMM. dd, yyyy' }}</li></small>
+                    </div> 
+                    <li class="list-group-item">{{dish.comments[1].rating}}</li>
+                    <li class="list-group-item">{{dish.comments[1].comment}}</li>
+                    <li class="list-group-item">{{dish.comments[1].author}}</li>
+                    <div class="card-footer">
+                        <small class="text-muted"><li class="list-group-item">{{dish.comments[1].date | date: 'MMM. dd, yyyy' }}</li></small>
+                    </div> 
+                    <li class="list-group-item">{{dish.comments[2].rating}}</li>
+                    <li class="list-group-item">{{dish.comments[2].comment}}</li>
+                    <li class="list-group-item">{{dish.comments[2].author}}</li>
+                    <div class="card-footer">
+                        <small class="text-muted"><li class="list-group-item">{{dish.comments[2].date | date: 'MMM. dd, yyyy' }}</li></small>
+                    </div> 
+                    <li class="list-group-item">{{dish.comments[3].rating}}</li>
+                    <li class="list-group-item">{{dish.comments[3].comment}}</li>
+                    <li class="list-group-item">{{dish.comments[3].author}}</li>
+                    <div class="card-footer">
+                        <small class="text-muted"><li class="list-group-item">{{dish.comments[3].date | date: 'MMM. dd, yyyy' }}</li></small>
+                    </div> 
+               </ul>
+                </div>  
+          </div>
+        </div>
+      </div>    
+</div>
