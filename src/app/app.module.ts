@@ -9,6 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
+import {LeadersService} from './leader/leaders.service';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [DishService],
+  providers: [DishService,LeadersService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
